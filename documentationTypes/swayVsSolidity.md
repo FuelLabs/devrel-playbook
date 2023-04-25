@@ -15,6 +15,6 @@ Sway vs Solidity Guidelines
 
 Some block of text introing what topic is up for discussion
 <br><br/>
-<img src="./assets/swayVsSolidity.png"/>
+<img src="../assets/swayVsSolidity.png"/>
 
 More text diving deep into what the details of the topic
