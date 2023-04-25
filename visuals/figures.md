@@ -1,2 +1,0 @@
-# Figures, diagrams and images
-
