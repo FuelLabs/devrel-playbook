@@ -60,7 +60,7 @@ With this: Store files online, access them from all your devices, and share them
 
 ## Structure
 
-For consistent documentation structure follow the two guides based on Fuel’s two main categories. 
+For consistent documentation structure follow the two guides based on Fuel’s two main categories. Follow this template into 
 
 1. Procedural, a tutorial based document to guide a user step by step through a specific task.
 2. Conceptual, a piece of documentation which helps the user run through a general topic down to its specifics. 
@@ -81,7 +81,7 @@ How to "task" with "software" on "infrastructure"
 **Example**
 How to deploy a Sway smart contract on the Fuel beta-3 testnet
 
-### Introduction
+### Introduction (h3)
 
 In one to three paragraphs motivate the reader about expectations of this tutorial and put emphasis on what they will acoomplish not just learn. Answer questions like
 
@@ -95,7 +95,7 @@ In one to three paragraphs motivate the reader about expectations of this tutori
 In this tutorial you will be writing a simple token smart contract smart contract and deploying int onto Fuel's beta-3 testnet. By the end you will be have a good grasp of the full Fuel suite from writing basic Sway code, to using the Fuel's Rust SDK for testing and the Forc toolchain.
 
 ### Prerequisites (h2)
-Spell out exactly what the reader should have done before the current tutorial. Use a list with point linking to existing fuel tutorials and be specific. There is no need to repeat documentation that already exists for example you can simple point them to the quick start guide for installing the Fuel suite. 
+Spell out exactly what the reader should have done or installed to be sucessful tutorial. Use a list with point linking to existing fuel tutorials and be specific. Users can easily be detered from a tutorial if they are stuck on the first step due to a missing dependancy. There is no need to repeat documentation that already exists for example you can simple point them to the quick start guide for installing the Fuel suite. 
 
 **Example**
 1. Installing forc
@@ -104,7 +104,7 @@ Spell out exactly what the reader should have done before the current tutorial. 
 4. Git, node?
 5. Accounts that users will need
 
-### Steps (h2)
+### Steps (h2) and Content (p)
 
 Try to be as granular as possible. Descibe to the reader two things what they need to do and why. Focus on the reader. Not we will learn but You will build. Should be running their own code block and sandwiched by. The instruction should be sandwich between by what the command does and after what the purpose of that command was.
 
@@ -124,10 +124,10 @@ Introduction sentences to each step and closing transition should be used to hel
 You have now written your first Sway contract you will need to make sure that it builds properly. To do this you will be 
 
 ### Conclusions (h2)
-Try to summarize what the reader has accomplished during this tutorial or learned by reading this. Continue that focus on the reader by suggestion next Fuel, tutorials, documentaions, or articles they can explore.
+Try to summarize what the reader has accomplished during this tutorial or learned by reading this. Continue that focus on the reader by suggestion next tutorials, documentaions, or articles they can explore in the Fuel ecosystem. Point them to the Fuel Forum for the user to reach out about any issues they are having. 
 
 **Example**
-Now that you have successfully built and deployed a Sway smart contract on the Fuel beta testnet you can apply that to more complex contracts
+Congratulations, now that you have successfully built and deployed a Sway smart contract on the Fuel beta testnet you can apply that knowledge to more complex contracts. Take a look at the sway applications repository for inspiration and ideas
 
 <br>
 
@@ -206,22 +206,15 @@ Variables should always be highlighted to indicate to the user that a change is 
 
 ### Images and diagrams
 
-When including images within your tutorial, use a brief caption to bring context to the image. Images should always be paired with alt text incase of rendering issues. A brief caption should always be followed as well to give the image context. Maks sure the image is as short as possible so it does not take up unessesary space.
+When including images in your tutorial, use a brief caption to provide context for the image. Images should always be paired with alt text in case of rendering issues. A concise caption should also be included to give the image context. Make sure the image is as small as possible to avoid taking up unnecessary space.
 
 | Recommended ✅                                   | Not Recommended ❌                                                             |
 |-------------------------------------------------|-----------------------------------------------------------------------------|
 | 1. GUIs<br>2. Interactive dialog<br>3. Diagrams | 1. Code<br>2. Config files<br>3. Outputs <br>4. Anything that can be copied |
 
-**Example Rendered Image**
+**Example**
 
 <figure class="image">
 <img src="./assets/block-explorer.png" alt="Some alt text">
-<figcaption style="text-align: center">Caption for block explorer</figcaption>
-</figure>
-
-**Example Unrendered Image**
-
-<figure class="image">
-<img src="../assets/block-explorer.png" alt="Some alt text">
-<figcaption style="text-align: center">Some caption for block explorer</figcaption>
+<figcaption>Caption for block explorer</figcaption>
 </figure>
