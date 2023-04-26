@@ -106,6 +106,7 @@ To ensure the reader is successful in the tutorial, spell out exactly what they 
 | Recommended ✅                                                                                                                                                                                                                                                 | Not Recommended ❌                                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | In order to go through this tutorial you will have to <br>1. Have install `Rust` and it's toolchain `rustup` [here](https://www.rust-lang.org/tools/install) <br>2. Have install fuel's toolchain manager,`fuelup` [here](https://github.com/FuelLabs/fuelup) | In order to go through this tutorial you will have to <br>1. Have rust installed<br>2. Have fuel's toolchain |
+
 Be concious about misselaneous tools that they need. Could be `git`, `node` or any accounts they need. Always be specific and never assume.
 
 ### Steps (h2) and Content (p)
