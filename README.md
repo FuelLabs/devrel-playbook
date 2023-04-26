@@ -163,21 +163,6 @@ $ forc build --error-on-warnings
 </tr>
 </table>
 
-`forc` command will compile the current project.
-
-```bash
-$ forc build --error-on-warnings
-```
-
-The `--error-on-warnings` flags will treat any warnings to be errors. This can be useful for catching unclean code like unused storage declarations.
-
-```bash
-Compiled library "core".
-Compiled library "std".
-Compiled contract "fuel-token".
-Bytecode size is 332 bytes.
-```
-
 ### Transitions (p)
 Introduction sentences for each step and closing transitions should be used to help the reader internalize what they have just completed and understand the upcoming step. This serves as checkpoints to ensure that the reader has properly understood and completed each step.
 
