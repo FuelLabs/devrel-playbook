@@ -61,6 +61,7 @@ Does it sound like something a real person would say? Be friendly and conversati
 <br>
 
 ## Structure
+Drawn inspiration from [Google](https://developers.google.com/style) and [Digital Ocean](https://www.digitalocean.com/community/tutorials/digitalocean-s-technical-writing-guidelines)
 
 For consistent documentation structure follow the two guides based on Fuel’s two main categories. Follow this template into 
 
