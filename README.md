@@ -28,15 +28,17 @@ Borrowed from [Microsoft](https://learn.microsoft.com/en-us/style-guide/top-10-t
 If you're using acronyms or words that the general audience may not understand, you should define these upon the first use. Then, you can use the acronym in subsequent writing.
 
 **Example**
-Sway introduces a new type called Address, which could represent an EOA (externally owned account) or a smart contract. EOAs are the most common type of account.
+| Recommended ✅                                                                                                                                                     |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sway introduces a new type called Address, which could represent an EOA (externally owned account) or a smart contract. EOAs are the most common type of account. |
 
 2. Use bigger ideas, fewer words
    Shorter is always better.
 
 **Example**
-Replace this: If you're ready to purchase Office 365 for your organization, contact your account representative.
-
-With this: Ready to buy? Contact us.
+| Recommended ✅             | Not Recommended ❌                                                                                  |
+|---------------------------|----------------------------------------------------------------------------------------------------|
+| Ready to buy? Contact us. | If you're ready to purchase Office 365 for your organization, contact your account representative. |
 
 3. Write like you speak
    Read your text aloud.
@@ -44,17 +46,17 @@ With this: Ready to buy? Contact us.
 Does it sound like something a real person would say? Be friendly and conversational. No. Robot. Words.
 
 **Example**
-Replace this: Invalid ID
-
-With this: You need an ID that looks like this: someone@example.com
+| Recommended ✅                                            | Not Recommended ❌ |
+|----------------------------------------------------------|-------------------|
+| You need an ID that looks like this: someone@example.com | Invalid ID        |
 
 4. Lead with verbs
    Most of the time, start each statement with a verb. Edit out you can and there is, there are, there were. To learn more, see Verbs and Word choice.
 
 **Example**
-Replace this: You can access apps across your devices, and you get online file storage and sharing.
-
-With this: Store files online, access them from all your devices, and share them with coworkers.
+| Recommended ✅                                                                         | Not Recommended ❌                                                                     |
+|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| Store files online, access them from all your devices, and share them with coworkers. | You can access apps across your devices, and you get online file storage and sharing. |
 
 <br>
 
@@ -73,17 +75,18 @@ When writing your guide you should be asking yourself questions about how this t
 
 ### Title (h1)
 
-The purpose of the title should explicitly answer the question of "What the goal of this task will be?" in under 60 characters while being as specific as possible. 
+The purpose of the title should explicitly answer the question, "What is the goal of this task?" in under 60 characters while being as specific as possible.
 
 **Template**
 How to "task" with "software" on "infrastructure" 
 
 **Example**
-How to deploy a Sway smart contract on the Fuel beta-3 testnet
-
+| Recommended ✅                                                  |
+|----------------------------------------------------------------|
+| How to deploy a Sway smart contract on the Fuel beta-3 testnet |
 ### Introduction (h3)
 
-In one to three paragraphs motivate the reader about expectations of this tutorial and put emphasis on what they will acoomplish not just learn. Answer questions like
+In one to three paragraphs, motivate the reader about the expectations of this tutorial, emphasizing what they will accomplish, not just learn. Answer questions like:
 
 1. What the tutorial is about
 2. Why the reader should be learning this topic
@@ -92,59 +95,121 @@ In one to three paragraphs motivate the reader about expectations of this tutori
 
 **Example**
 
-In this tutorial you will be writing a simple token smart contract smart contract and deploying int onto Fuel's beta-3 testnet. By the end you will be have a good grasp of the full Fuel suite from writing basic Sway code, to using the Fuel's Rust SDK for testing and the Forc toolchain.
+| Recommended ✅                                                                                                                                                                                                                                                                                  |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| In this tutorial you will be writing a simple token smart contract smart contract and deploying int onto Fuel's beta-3 testnet. By the end you will be have a good grasp of the full Fuel suite from writing basic Sway code, to using the Fuel's Rust SDK for testing and the Forc toolchain. |
 
 ### Prerequisites (h2)
-Spell out exactly what the reader should have done or installed to be sucessful tutorial. Use a list with point linking to existing fuel tutorials and be specific. Users can easily be detered from a tutorial if they are stuck on the first step due to a missing dependancy. There is no need to repeat documentation that already exists for example you can simple point them to the quick start guide for installing the Fuel suite. 
+To ensure the reader is successful in the tutorial, spell out exactly what they should have done or installed. Create a list of specific points linking to existing Fuel tutorials. It's important to be specific, as users can become easily discouraged if they are stuck on the first step due to a missing install. Additionally, avoid repeating documentation that already exists. Instead, point the user to relevant resources, such as the quick start guide for installing the Fuel suite. Always be specific and never assume.
 
 **Example**
-1. Installing forc
-2. Installing rust
-3. Installing fuelup
-4. Git, node?
-5. Accounts that users will need
+| Recommended ✅                                                                                                                                                                                                                                                 | Not Recommended ❌                                                                                            |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| In order to go through this tutorial you will have to <br>1. Have install `Rust` and it's toolchain `rustup` [here](https://www.rust-lang.org/tools/install) <br>2. Have install fuel's toolchain manager,`fuelup` [here](https://github.com/FuelLabs/fuelup) | In order to go through this tutorial you will have to <br>1. Have rust installed<br>2. Have fuel's toolchain |
+Be concious about misselaneous tools that they need. Could be `git`, `node` or any accounts they need. Always be specific and never assume.
 
 ### Steps (h2) and Content (p)
 
-Try to be as granular as possible. Descibe to the reader two things what they need to do and why. Focus on the reader. Not we will learn but You will build. Should be running their own code block and sandwiched by. The instruction should be sandwich between by what the command does and after what the purpose of that command was.
+Be as granular as possible in your instructions. First, explain to the reader what they need to do and why. Never assume. Then, provide a direct command, such as "you will build," and sandwich it between an explanation of what the command does and the purpose of the command. Avoid using questions like "we will learn" and instead focus on the reader. Ask yourself questions like
 
-1. What the command does
+1. What does the command acheive?
 2. Command
-3. Details about the command 
-   1. Arguments purpose
+3. What are the details of the command?
+   1. What arguments are used and why?
    2. Why your reader is using them
 
-Display the output in a separate block
+If the command yields an output always display it in a separate block.
 
+<table>
+<tr>
+<td> Recommended ✅</td> <td> Not Recommended ❌</td>
+</tr>
+<tr>
+<td>
+
+`forc` command will compile the current project.
+
+```bash
+$ forc build --error-on-warnings
+```
+
+The `--error-on-warnings` flags will treat any warnings to be errors. This can be useful for catching unclean code like unused storage declarations. Use 
+
+```bash
+Compiled library "core".
+Compiled library "std".
+Compiled contract "fuel-token".
+Bytecode size is 332 bytes.
+```
+
+</td>
+
+<td>
+
+`forc` command will compile the current project.
+
+```bash
+$ forc build --error-on-warnings
+   Compiled library "core".
+   Compiled library "std".
+   Compiled contract "fuel-token".
+   Bytecode size is 332 bytes.
+```
+
+</td>
+</tr>
+<tr>
+</tr>
+</table>
+
+`forc` command will compile the current project.
+
+```bash
+$ forc build --error-on-warnings
+```
+
+The `--error-on-warnings` flags will treat any warnings to be errors. This can be useful for catching unclean code like unused storage declarations.
+
+```bash
+Compiled library "core".
+Compiled library "std".
+Compiled contract "fuel-token".
+Bytecode size is 332 bytes.
+```
 
 ### Transitions (p)
-Introduction sentences to each step and closing transition should be used to help the reader internalize what the user has just completed and what the next step is. They act as a checkpoint to make sure that the user has understood and completed the steps properly.
+Introduction sentences for each step and closing transitions should be used to help the reader internalize what they have just completed and understand the upcoming step. This serves as checkpoints to ensure that the reader has properly understood and completed each step.
 
 **Example**
-You have now written your first Sway contract you will need to make sure that it builds properly. To do this you will be 
+| Recommended ✅                                                                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Now that you have written your first Sway contract, you will need to ensure that it builds correctly. To do this, you will need to refer back to the `forc` toolchain. |
 
 ### Conclusions (h2)
-Try to summarize what the reader has accomplished during this tutorial or learned by reading this. Continue that focus on the reader by suggestion next tutorials, documentaions, or articles they can explore in the Fuel ecosystem. Point them to the Fuel Forum for the user to reach out about any issues they are having. 
+Try to summarize what the reader has accomplished during this tutorial or what they have learned from it. Continue focusing on the reader by suggesting the next tutorials, documentation, or articles they can explore in the Fuel ecosystem. Also, point them to the Fuel Forum for users to reach out about any issues they are having.
 
 **Example**
-Congratulations, now that you have successfully built and deployed a Sway smart contract on the Fuel beta testnet you can apply that knowledge to more complex contracts. Take a look at the sway applications repository for inspiration and ideas
+| Recommended ✅                                                                                                                                                                                                                                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Congratulations! Now that you have successfully built and deployed a Sway smart contract on the Fuel beta testnet, you can apply that knowledge to more complex contracts. Take a look at the [ Sway Applications repository ]( https://github.com/FuelLabs/sway-applications ) for inspiration and ideas. |
 
 <br>
 
 ## Formatting
 
-All of the documentation for Fuel is in Markdown and to ensure consistency in formatting, we recommend using the following closely to this ruleset.
+All of the documentation for Fuel is in Markdown. To ensure consistency in formatting, we recommend adhering closely to the following ruleset.
 
 ### Headers
 
-Each section of tutorials needs a header. Rule of thumb is to use H3s as little as possible and try your best to not use H4s.
-1. H1 are reserved for 
+Each section of tutorials requires a header. As a rule of thumb, use H3s sparingly and avoid using H4s whenever possible.
+
+1. H1 headers are reserved for:
    - Titles
-2. H2 are used for 
-   - Defining prerequisites 
+2. H2 headers are used for:
+   - Defining prerequisites
    - Steps in a tutorial
    - Conclusions
-3. H3 are used for 
+3. H3 headers are used for:
    - Introductions
 
 For a step based tutorials, **-ing** words should be used. 
@@ -156,14 +221,14 @@ For a step based tutorials, **-ing** words should be used.
 
 ### Inline Text
    
-When looking to include any of the following in **bolded**, *italics*, or `code` inline in any of your text explaining make sure that it is used in the correct category.
+When looking to include any of the following in **bold**, *italics*, or `code` inline within your explanatory text, ensure that it is used in the appropriate context.
 
 | **Bold**                                                                                                        | _Italics_                      | `Code`                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | 1. Visible GUI text<br>2. Hostnames usernames<br>3. Term lists<br>4. Emphasis when changing context for command | 1. Introducing technical terms | 1. Commands<br>2. Package names<br>3. Optional commands<br>4. Filenames and paths<br>5. Example URLs<br>6. Ports<br>7. Key Presses |
 
 ### Code blocks
-Code blocks should be used for things like commands to execution commands, files and scripts, outputs, interactive dialogs only. Basically anything that the user can copy and paste into their own system. 
+Code blocks should be used for items such as execution commands, files and scripts, outputs, and interactive dialogs only. Essentially, anything that the user can copy and paste into their own system.
 
 1. File omissions should always use ellipses (...)
 
@@ -180,29 +245,14 @@ Code blocks should be used for things like commands to execution commands, files
    }
    ```
 
-2. New code changes should have a different color indicating new lines or changes
+2. Use code blocks with the appropriate command line highlighting when possible. Utilize the "$" symbol to indicate a command line is being used.
 
-   <pre>
-   $ sample <span style="color:DodgerBlue">DodgerBlue</span> sample
-   </pre>
-
-
-3. Codeblock use the proper command line highlighting when possible and use $ to indicate a commandline is being used
-
+   > This example creates a new Sway project called `fuel-token` in your home directory. Change it to a token name you like.
    ```bash
    $ cd
-   $ forc new counter-contract
+   $ forc new fuel-token
    ```
 
-### Variables
-   
-Variables should always be highlighted to indicate to the user that a change is required. This includes URLs, version numbers, and modified lines in a file. When describing the highlighted variable avoid color labeling things as colors could change.
-
-**Example**
-
-```bash
-
-```
 
 ### Images and diagrams
 
